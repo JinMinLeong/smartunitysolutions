@@ -1,0 +1,55 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colours */
+    --dark-navy: #0F172A;
+    --corporate-blue: #2563EB;
+    
+    /* Neutral Colours */
+    --white: #FFFFFF;
+    --light-grey: #F3F4F6;
+    --medium-grey: #6B7280;
+    --dark-grey: #1F2937;
+    
+    /* Accent */
+    --soft-blue: #60A5FA;
+    
+    /* Legacy variables for compatibility */
+    --primary-blue: #2563EB;
+    --light-blue: #F3F4F6;
+    --dark-text: #1F2937;
+    --light-text: #6B7280;
+    --shadow: rgba(15, 23, 42, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-grey);
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer */
+.footer {
+    background: var(--dark-navy);
+    color: var(--white);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-tagline {
+    color: var(--soft-blue);
+    font-style: italic;
+    margin-top: 10px;
+}

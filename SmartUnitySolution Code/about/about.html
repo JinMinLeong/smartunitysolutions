@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Smart Unity Solutions</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">About Smart Unity Solutions</h1>
+                <p class="hero-subtitle">Empowering Excellence Through Training & Consultation</p>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Who We Are</span>
+                <h2 class="section-title">About Us</h2>
+            </div>
+            <div class="about-content-wrapper">
+                <!-- Left Column -->
+                <div class="about-left">
+                    <div class="about-intro">
+                    
+                        <p>
+                            Smart Unity Solutions is a professional training and consultation provider dedicated to empowering individuals, teams, and organisations through impactful learning experiences and customised advisory services.
+                        </p>
+                        <p>
+                            We are founded on the belief that every organisation has the potential to grow, transform, and excel. We offer practical, results-driven programs that strengthen performance, enhance leadership capability, and improve workplace wellbeing.
+                        </p>
+                        <div class="highlight-box">
+                            <p>
+                                With strong industry experience across <strong>manufacturing, engineering, management, logistics, and organisational development</strong>, our team comprises certified trainers, consultants, and industry experts. We are registered with <strong>SSM</strong> and <strong>HRD Corp</strong>, ensuring all our programs meet the highest standards.
+                            </p>
+                        </div>
+                        <p>
+                            We are committed to delivering high-value training and consultation that support business performance, people development, and long-term success.
+                        </p>
+                        <div class="tagline-box">
+                            <p class="about-tagline">Smart Unity Solutions – Connecting Your Ideas To Create Solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="about-right">
+                    <div class="mission-vision-section">
+                        <h3 class="mission-vision-title">
+                     
+                            Our Mission & Vision
+                        </h3>
+                        
+                        <div class="mission-vision-card">
+            
+                            <h4>Our Mission</h4>
+                            <p>To deliver high-quality, relevant, and impactful training and consultation services that empower individuals, teams, and organisations. We are committed to upskilling people, enhancing workplace performance, and co-creating solutions that support continuous growth and long-term success.</p>
+                        </div>
+
+                        <div class="mission-vision-card">
+                         
+                            <h4>Our Vision</h4>
+                            <p>To be a trusted and innovative training & consultancy partner in Malaysia and beyond — recognised for empowering people, inspiring transformation, and contributing to stronger organisations, resilient industries, and a competitive nation.</p>
+                        </div>
+                    </div>
+
+                    <div class="core-values-section">
+                        <h3 class="core-values-title">
+                        
+                            Our Core Values
+                        </h3>
+                        
+                        <div class="core-values-list">
+                            <div class="value-item">
+                        
+                                <div class="value-content">
+                                    <h4>Client-Centred Partnership</h4>
+                                    <p>We place our clients at the heart of everything we do. By understanding their goals and challenges, we connect ideas with practical solutions that deliver meaningful outcomes.</p>
+                                </div>
+                            </div>
+
+                            <div class="value-item">
+                              
+                                <div class="value-content">
+                                    <h4>Solution-Driven Innovation</h4>
+                                    <p>We transform challenges into opportunities through creativity, adaptability, and a commitment to continuous improvement — ensuring every programme and consultation adds real value.</p>
+                                </div>
+                            </div>
+
+                            <div class="value-item">
+                              
+                                <div class="value-content">
+                                    <h4>Empowering People Through Upskilling</h4>
+                                    <p>We believe people are the foundation of progress. Our purpose is to uplift individuals by enhancing skills, expanding knowledge, and building confidence for personal and professional growth.</p>
+                                </div>
+                            </div>
+
+                            <div class="value-item">
+                                <div class="value-icon">🌍</div>
+                                <div class="value-content">
+                                    <h4>Impacting Communities & Industries</h4>
+                                    <p>Our work goes beyond organisations. By developing capable individuals and strengthening workplace capabilities, we contribute to healthier communities and more resilient industries.</p>
+                                </div>
+                            </div>
+
+                            <div class="value-item">
+                                <div class="value-icon">🇲🇾</div>
+                                <div class="value-content">
+                                    <h4>Supporting National Competitiveness</h4>
+                                    <p>A skilled workforce drives a nation forward. We are committed to supporting Malaysia's progress by helping organisations innovate, elevate performance, and stay competitive in a rapidly changing world.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Smart Unity Solutions. All rights reserved.</p>
+            <p class="footer-tagline">Connecting Your Ideas To Create Solutions</p>
+        </div>
+    </footer>
+
+    <script src="../header/header.js"></script>
+    <script src="about.js"></script>
+    <script>
+        // Load header
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                // Fix navigation links
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    link.setAttribute('href', '../' + href);
+                });
+                // Fix quote button
+                const quoteBtn = document.querySelector('.quote-btn');
+                if (quoteBtn) {
+                    quoteBtn.setAttribute('href', '../contact/contact.html');
+                }
+                // Re-initialize header script after loading
+                const script = document.createElement('script');
+                script.src = '../header/header.js';
+                document.body.appendChild(script);
+            });
+    </script>
+</body>
+</html>
