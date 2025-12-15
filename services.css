@@ -1,4 +1,19 @@
 /* Services Page Specific Styles */
+/* ===== THEME: White + Dark Blue + Black ===== */
+:root {
+  --white: #ffffff;
+
+  /* dark blues */
+  --corporate-blue: #0b2a5b;   /* main blue */
+  --dark-navy: #071a33;        /* deepest navy */
+  --soft-blue: #123b7a;        /* lighter navy accent */
+
+  /* greys / blacks */
+  --light-grey: #f6f7fb;       /* page background */
+  --medium-grey: #4b5563;      /* paragraph text */
+  --dark-grey: #111827;        /* headings / strong text */
+}
+
 
 /* Hero Section */
 .services-hero {
