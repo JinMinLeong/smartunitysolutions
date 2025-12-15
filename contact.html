@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Smart Unity Solutions</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,14 +70,14 @@
                     <div class="info-cards">
                         <div class="info-card">
                             <div class="card-icon image-icon">
-                                <img src="../home/hrdcorplogo.jpg.png" alt="HRD Corp Registered Training Provider">
+                                <img src="hrdcorplogo.jpg.png" alt="HRD Corp Registered Training Provider">
                             </div>
                             <h4>Registration</h4>
                             <p>Registered with SSM & HRD Corp</p>
                         </div>
                         <div class="info-card">
                             <div class="card-icon image-icon">
-                                <img src="../home/claimable.jpg.webp" alt="HRD Corp Claimable">
+                                <img src="claimable.jpg.webp" alt="HRD Corp Claimable">
                             </div>
                             <h4>Accreditation</h4>
                             <p>Fully accredited training provider delivering programmes that meet industry standards.</p>
@@ -175,11 +175,11 @@
         </div>
     </footer>
 
-    <script src="../header/header.js"></script>
+    <script src="header.js"></script>
     <script src="contact.js"></script>
     <script>
         // Load header
-        fetch('../header/header.html')
+        fetch('header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
@@ -192,11 +192,11 @@
                 // Fix quote button
                 const quoteBtn = document.querySelector('.quote-btn');
                 if (quoteBtn) {
-                    quoteBtn.setAttribute('href', '../contact/contact.html');
+                    quoteBtn.setAttribute('href', 'contact.html');
                 }
                 // Re-initialize header script after loading
                 const script = document.createElement('script');
-                script.src = '../header/header.js';
+                script.src = 'header.js';
                 document.body.appendChild(script);
             });
     </script>
