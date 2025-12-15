@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Smart Unity Solutions</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +23,8 @@
                 <h1 class="hero-title">Looking for first class training & consultation services?</h1>
                 <p class="hero-description">With over 10 years of experience helping businesses to find comprehensive solutions through high-impact training and professional development.</p>
                 <div class="hero-buttons">
-                    <a href="../about/about.html" class="btn btn-outline">OUR COMPANY</a>
-                    <a href="../contact/contact.html" class="btn btn-primary">CONTACT US</a>
+                    <a href="about.html" class="btn btn-outline">OUR COMPANY</a>
+                    <a href="contact.html" class="btn btn-primary">CONTACT US</a>
                 </div>
             </div>
         </div>
@@ -73,12 +73,12 @@
                     <div class="accreditation-logos">
                         <div class="logo-card">
                             <div class="hrd-logo">
-                                <img src="../home/HRDcorplogo.jpg.png "alt="HRD Corp Registered Training Provider">
+                                <img src="HRDcorplogo.jpg.png "alt="HRD Corp Registered Training Provider">
                             </div>
                         </div>
                         <div class="logo-card">
                             <div class="hrd-logo">
-                                <img src="../home/claimable.jpg.webp" alt="HRD Corp Claimable">
+                                <img src="claimable.jpg.webp" alt="HRD Corp Claimable">
                             </div>
                         </div>
                     </div>
@@ -96,11 +96,11 @@
         </div>
     </footer>
 
-    <script src="../header/header.js"></script>
+    <script src="header.js"></script>
     <script src="home.js"></script>
     <script>
         // Load header
-        fetch('../header/header.html')
+        fetch('header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
@@ -117,11 +117,11 @@
                 // Fix quote button link
                 const quoteBtn = document.querySelector('.quote-btn');
                 if (quoteBtn) {
-                    quoteBtn.setAttribute('href', '../contact/contact.html');
+                    quoteBtn.setAttribute('href', 'contact.html');
                 }
                 // Re-initialize header script after loading
                 const script = document.createElement('script');
-                script.src = '../header/header.js';
+                script.src = 'header.js';
                 document.body.appendChild(script);
             });
     </script>
