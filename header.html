@@ -1,26 +1,33 @@
 <!-- Header -->
-<header class="header">
-    <div class="container">
-        <div class="header-content">
-            <div class="logo-section">
-             
-                <div class="logo-text">
-                    <h1 class="logo">Smart Unity Solutions</h1>
-                    <p class="tagline">Connecting Your Ideas To Create Solutions</p>
-                </div>
-            </div>
-            <nav class="navbar">
-                <ul class="nav-menu">
-                    <li><a href="home.html" class="nav-link" data-page="home">HOME</a></li>
-                    <li><a href="about.html" class="nav-link" data-page="about">ABOUT US</a></li>
-                    <li><a href="services.html" class="nav-link" data-page="services">SERVICES</a></li>
-                    <li><a href="contact.html" class="nav-link" data-page="contact">CONTACT US</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-               
-                <a href="contact.html" class="quote-btn">GET A QUOTE</a>
-            </div>
+<header class="header" id="siteHeader">
+  <div class="container">
+    <div class="header-content">
+      <!-- Brand -->
+      <a class="brand" href="home.html" aria-label="Smart Unity Solutions Home">
+        <div class="brand-text">
+          <div class="brand-name">Smart Unity Solutions</div>
+          <div class="brand-tagline">Connecting Your Ideas To Create Solutions</div>
         </div>
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Nav -->
+      <nav class="navbar" id="siteNav" aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="home.html" class="nav-link" data-page="home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+          <li><a href="services.html" class="nav-link" data-page="services">Services</a></li>
+          <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+        </ul>
+
+        <a href="contact.html" class="quote-btn">Get a Quote</a>
+      </nav>
     </div>
+  </div>
 </header>
