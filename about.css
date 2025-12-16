@@ -46,6 +46,7 @@
     font-weight: 700;
     margin-bottom: 15px;
     animation: fadeInUp 0.8s ease;
+      margin-top: -100px; 
 }
 
 .hero-subtitle {
